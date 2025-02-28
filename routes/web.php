@@ -76,6 +76,10 @@ Route::get('/download/{filename}', function ($filename) {
     return response()->download($filePath);
 });
 
+Route::get('/letter-head', function () {
+    return view('letter-head');
+});
+
 // Route::get('/generate-product-import-format', [ProductController::class, 'generateImportFormat'])->name('generate-product-import-format');
 
 

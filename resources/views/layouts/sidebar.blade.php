@@ -503,6 +503,17 @@
                 </div>
             @endif
 
+            <div class="flex items-center ml-4 justify-between cursor-pointer hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-primary hover:via-secondary hover:to-thirdy mr-5">
+                <div class="flex items-center  ">
+
+                    <i class="fas fa-file-lines w-9 text-sm text-black opacity-70"></i>
+                    <a href="">
+                        <h1 class="text-[15px]">Letter Head</h1>
+                    </a>
+                </div>
+
+            </div>
+
         </div>
     </div>
 </div>
