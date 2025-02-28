@@ -1,0 +1,118 @@
+
+.switch {
+    position: relative;
+    width: 150px;
+    height: 35px;
+    text-align: center;
+
+    background: #ff8a00;
+    transition: all 0.2s ease;
+    border-radius: 25px;
+}
+
+.switch span {
+    position: absolute;
+    width: 20px;
+    height: 4px;
+    top: 50%;
+    left: 50%;
+    margin: -2px 0px 0px -4px;
+    background: #fff;
+    display: block;
+    transform: rotate(-45deg);
+    transition: all 0.2s ease;
+}
+
+.switch span:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 4px;
+    height: 12px;
+    margin-top: -8px;
+    background: #fff;
+    transition: all 0.2s ease;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+.switch label {
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.6);
+    width: 60px;
+    line-height: 35px;
+    transition: all 0.2s ease;
+}
+
+label[for=yes] {
+    position: absolute;
+    left: 0px;
+    height: 20px;
+}
+
+label[for=no] {
+    position: absolute;
+    right: 0px;
+}
+
+#no:checked~.switch {
+    background: #c30010;
+}
+
+#no:checked~.switch span {
+    background: #fff;
+    margin-left: -8px;
+}
+
+#no:checked~.switch span:after {
+    background: #fff;
+    height: 20px;
+    margin-top: -8px;
+    margin-left: 8px;
+}
+
+#yes:checked~.switch label[for=yes] {
+    color: #fff;
+}
+
+#no:checked~.switch label[for=no] {
+    color: #fff;
+}
+
+.custom-alert {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 5px;
+    /* Adjust the top position to fit your layout */
+    right: 5px;
+    /* Adjust the right position to fit your layout */
+    z-index: 9999;
+}
+
+.imei-container {
+    position: relative;
+    display: inline-block;
+}
+
+.hover-imei {
+    position: absolute;
+    top: 55px;
+    left: 40px;
+    transform: translateY(-50%);
+    z-index: 9999;
+
+    display: none;
+    transition: display 0.5s, left 0.5s;
+}
+
+.imei-container:hover .hover-imei {
+    display: block;
+
+
+}

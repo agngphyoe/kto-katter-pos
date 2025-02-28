@@ -1,0 +1,19 @@
+.icon-container {
+    position: relative;
+    /* display: inline-block; */
+}
+
+.hover-icons {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+
+    opacity: 0;
+    transition: opacity 0.3s, left 0.3s;
+}
+
+.icon-container:hover .hover-icons {
+    opacity: 1;
+    left: 30px;
+}

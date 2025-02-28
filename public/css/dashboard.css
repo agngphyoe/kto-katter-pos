@@ -1,0 +1,35 @@
+.tab-btn.active {
+
+    color: #00812C;
+    text-decoration: underline;
+    font-weight: 700;
+    text-decoration-thickness: 2px;
+
+}
+
+.tab-content {
+    display: none;
+
+}
+
+.tab-content.active {
+    display: block;
+    width: 100% !important;
+}
+
+.sale-content {
+    display: none;
+}
+
+.sale-content.active {
+    display: block;
+}
+
+.sale-btn.active {
+
+    color: #00812C;
+    text-decoration: underline;
+    font-weight: 700;
+    text-decoration-thickness: 2px;
+
+}

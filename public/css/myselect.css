@@ -1,0 +1,95 @@
+.select2-container--default .select2-selection--single {
+
+    border: 1px solid #00812C;
+    border-radius: 20px;
+    height: 38px;
+    /* width: 100%; */
+    font-family: 'Plus Jakarta Sans', sans-serif;
+
+
+}
+
+.select2-selection.select2-selection--multiple{
+    border: 1px solid #00812C;
+    border-radius: 20px;
+    height: 38px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice{
+    background-color:#00812C;
+    color:white;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size:14px;
+
+}
+
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove{
+    color:white;
+}
+
+.select2-container--default.select2-container--focus .select2-selection--multiple{
+    border: 1px solid #00812C;
+    border-radius: 20px;
+    height: 60px;
+
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #00812C;
+    line-height: 35px;
+    padding-left: 16px;
+    font-size: 14px;
+
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 38px;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: 30px;
+}
+
+.dropdown-wrapper {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+
+}
+
+.custom-input,.order-select{
+    width: 300px !important;
+}
+
+.product-select{
+    width: 300px !important;
+
+}
+
+.supplier-select{
+    width:250px !important;
+}
+
+.delivery-select{
+    width: 300px;
+}
+
+/* .order-select,.select2 {
+    min-width: 250px !important;
+} */
+.sale-select,.select{
+    min-width: 100px !important;
+}
+
+option{
+    font-family: 'Inter';
+}
+
+.select2-container .select2-results__option.select2-results__option--highlighted {
+    background-color: #00812C;
+}
+
+.select2-container .select2-search__field {
+    outline: none;
+
+}
