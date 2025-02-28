@@ -87,14 +87,6 @@
                                                 Type
                                             </th>
                                             <th
-                                                class="px-6 animate__animated animate__fadeInTopLeft whitespace-nowrap py-3 text-left">
-                                                IMEI
-                                            </th>
-                                            <th
-                                                class="px-6 animate__animated animate__fadeInTopLeft whitespace-nowrap py-3 text-left">
-                                                IMEI Numbers
-                                            </th>
-                                            <th
                                                 class="px-6 animate__animated animate__fadeInTopLeft whitespace-nowrap py-3 text-center">
                                                 Quantity
                                             </th>

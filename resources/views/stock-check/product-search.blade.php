@@ -29,45 +29,6 @@
         <td class="px-6 py-4 whitespace-nowrap">
             {{ $product->type?->name ?? '-' }}
         </td>
-        <td class="px-6 py-4 whitespace-nowrap">
-            @switch($product->is_imei)
-                @case(1)
-                    <x-badge class="bg-green-600 py-1 text-white px-2">
-                        IMEI Product
-                    </x-badge>
-                @break
-
-                @case(0)
-                    <x-badge class="bg-gray-300 py-1 text-dark px-2">
-                        Non-IMEI Product
-                    </x-badge>
-                @break
-
-                @default
-            @endswitch
-        </td>
-        <td class="px-6 py-4 text-center">
-            @php
-                $imei_numbers = \App\Models\IMEIProduct::where('product_id', $product->id)
-                    ->where('location_id', $location->id)
-                    ->where('status', '!=', 'Sold')
-                    ->get();
-            @endphp
-            @if ($product->is_imei == 1)
-                {{-- @if ($imei_numbers->isNotEmpty()) --}}
-                <a href="{{ route('imei-stock', ['product_id' => $product->id, 'location_id' => $location->id]) }}"
-                    class="bg-noti py-1 text-white px-2 rounded-full font-jakarta font-medium  text-[12px]">
-                    IMEI List
-                </a>
-                <br>
-                {{-- @else
-                    No IMEI is Found
-                @endif --}}
-            @else
-                No IMEI
-            @endif
-
-        </td>
         <td class="px-6 py-4 whitespace-nowrap text-noti text-center">
             {{ $product->quantity }}
         </td>

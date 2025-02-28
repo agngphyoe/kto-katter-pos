@@ -117,9 +117,6 @@
                                                         <h1 class="text-[#5C5C5C] font-medium  ">{{ $product->name }} <span
                                                                 class="text-noti ">({{ $product->code }})</span></h1>
                                                     </div>
-                                                    @if ($product->is_imei == 1)
-                                                        <span class="text-[#5C5C5C] ml-5">{{ $data->imei }}</span>
-                                                    @endif
                                                 </th>
                                                 <td class="px-6 py-4 whitespace-nowrap">
                                                     {{ $product->category?->name }}

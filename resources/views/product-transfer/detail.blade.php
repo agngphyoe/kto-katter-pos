@@ -86,14 +86,6 @@
                                             </th>
                                             <th
                                                 class="px-6 animate__animated animate__fadeInTopLeft whitespace-nowrap py-3 text-left">
-                                                IMEI
-                                            </th>
-                                            <th
-                                                class="px-6 animate__animated animate__fadeInTopLeft whitespace-nowrap py-3 text-left">
-                                                IMEI Numbers
-                                            </th>
-                                            <th
-                                                class="px-6 animate__animated animate__fadeInTopLeft whitespace-nowrap py-3 text-left">
                                                 Transferred
                                             </th>
                                             <th
@@ -142,37 +134,6 @@
                                                 </td>
                                                 <td class="px-6 py-4 whitespace-nowrap">
                                                     {{ $product->product?->type?->name ?? '-' }}
-                                                </td>
-                                                <td class="px-6 py-4 whitespace-nowrap">
-                                                    @switch($product->product?->is_imei)
-                                                        @case(1)
-                                                            <x-badge class="bg-green-600 py-1 text-white px-2">
-                                                                IMEI Product
-                                                            </x-badge>
-                                                        @break
-
-                                                        @case(0)
-                                                            <x-badge class="bg-gray-300 py-1 text-dark px-2">
-                                                                Non-IMEI Product
-                                                            </x-badge>
-                                                        @break
-
-                                                        @default
-                                                    @endswitch
-                                                </td>
-                                                <td class="px-6 py-4 text-left">
-                                                    @php
-                                                        $imeis = json_decode($product->imei_numbers, true); // Decode the JSON into an array
-                                                    @endphp
-
-                                                    @if (!empty($imeis) && is_array($imeis))
-                                                        @foreach ($imeis as $imei)
-                                                            {{ $imei }} <br>
-                                                            <!-- Display each IMEI on a new line -->
-                                                        @endforeach
-                                                    @else
-                                                        No IMEI
-                                                    @endif
                                                 </td>
                                                 <td class="px-6 py-4 whitespace-nowrap">
                                                     {{ number_format($product->transfer_qty) }}
