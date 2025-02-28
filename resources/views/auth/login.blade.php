@@ -125,7 +125,7 @@
 <body>
     <div class="container-fluid">
         <div class="logo-container">
-            <img src="{{ asset('images/mobileShop_logo.png') }}" alt="Logo" class="img-fluid animate__animated w-[550px] animate__fadeInUp" style="max-width: 550px;animation-duration: 2s;">
+            <img src="{{ asset('images/kto_logo.png') }}" alt="Logo" class="img-fluid animate__animated w-[550px] animate__fadeInUp" style="max-width: 550px;animation-duration: 2s;">
         </div>
         <div class="login-container" style="background-color: #9e9ea1;">
             <h1 class="text-4xl font-jakarta font-bold mb-14 mt-6 ml-14">Welcome !</h1>

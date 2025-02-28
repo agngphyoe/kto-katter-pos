@@ -32,7 +32,8 @@ class Product extends Model
         'company_id',
         'created_by',
         'is_imei',
-        'is_foc'
+        'is_foc',
+        'isOwnProduct'
     ];
 
     public static function boot()

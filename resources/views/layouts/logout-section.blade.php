@@ -1,10 +1,10 @@
 <div id="dropdown-menu" class="bg-white font-jakarta w-[250px]  shadow-2xl px-5 py-2 z-20 hidden absolute top-20 rounded-lg right-10 ">
     <div>
-        @if (auth()->user()->image)
+        {{-- @if (auth()->user()->image)
         <img src="{{ asset('users/image/' . auth()->user()->image) }}" style="max-width: 50%; border-radius: 50%; margin-left:60px;" alt="">
-        @else
+        @else --}}
         <img src="{{ asset('images/Ellipse.png') }}" class="w-32 h-32 mx-auto" alt="">
-        @endif
+        {{-- @endif --}}
 
     </div>
     <div class="text-center">

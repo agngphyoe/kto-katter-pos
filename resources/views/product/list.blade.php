@@ -21,13 +21,13 @@
                     <h1 class=" text-[#999999] font-poppins text-sm">Search Result: <span
                             class="showTotal text-primary">0</span></h1>
                     <!-- Button to open the modal -->
-                    @if (auth()->user()->hasPermissions('product-create'))
+                    {{-- @if (auth()->user()->hasPermissions('product-create'))
                         @if ($products->count() == 0)
                             <button id="openModalBtn"
                             class="text-sm bg-primary  font-semibold font-jakarta text-white  w-32  py-2 rounded-2xl"
                             onclick="toggleModal()">Import Excel</button>
                         @endif                      
-                    @endif
+                    @endif --}}
 
                     <h1 class="text-[#999999] font-poppins text-sm">Number of Products : <span
                             class="text-primary">{{ $total_count }}</span></h1>
@@ -143,10 +143,6 @@
                                     <th
                                         class="px-6 animate__animated animate__fadeInTopLeft whitespace-nowrap py-3 text-left">
                                         Design
-                                    </th>
-                                    <th
-                                        class="px-6 animate__animated animate__fadeInTopLeft whitespace-nowrap py-3 text-left">
-                                        IMEI
                                     </th>
                                     <th
                                         class="px-6 animate__animated animate__fadeInTopLeft whitespace-nowrap py-3 text-center">

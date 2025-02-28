@@ -298,6 +298,8 @@ Route::group(['middleware' => ['auth', 'check.account']], function () {
         Route::get('/product-stock-check', [ProductController::class, 'stockCheck'])->name('product-stock-check');
 
         Route::get('/product/price-log/{product_id}', [ProductController::class, 'priceLog'])->name('product-price-log');
+
+        Route::get('/build-new-product', [ProductController::class, 'buildNewProduct'])->name('build-new-product');
     });
 
     //Product Transfer

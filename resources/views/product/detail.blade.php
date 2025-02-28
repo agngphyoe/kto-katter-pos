@@ -60,7 +60,7 @@
                                 <img src="{{ asset('products/image/' . $product->image) }}"
                                     class="w-full object-contain h-96 " alt="x">
                             @else
-                                <img src="{{ asset('images/product_photo.jpg') }}" class="w-96 object-contain h-96 ">
+                                <img src="{{ asset('images/no-image.png') }}" class="w-96 object-contain h-96 ">
                             @endif
                         </div>
 

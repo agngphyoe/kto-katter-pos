@@ -8,7 +8,7 @@
         {{-- close btn end --}}
 
         <a href="{{ route('dashboard') }}">
-            <img src="{{ asset('images/mobileShop_logo.png') }}" class="mx-auto" style="height: 180px; width:180px;"
+            <img src="{{ asset('images/kto_logo.png') }}" class="mx-auto" style="height: 180px; width:180px;"
                 alt="">
         </a>
 
@@ -159,6 +159,8 @@
                         @if (auth()->user()->hasPermissions('product-create'))
                             <x-sidebar-tag class="fa-solid fa-circle-plus" route="{{ route('product-create') }}"
                                 text="Create" />
+                                <x-sidebar-tag class="fa-solid fa-circle-plus" route="{{ route('build-new-product') }}"
+                                text="Build New Product" />
                         @endif
 
                         {{-- product barcode --}}

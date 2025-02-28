@@ -46,23 +46,6 @@
         <td class="py-4 whitespace-nowrap px-6 ">
             {{ $product->design->name ?? '-' }}
         </td>
-        <td class="py-4 whitespace-nowrap px-6 ">
-            @switch($product->is_imei)
-                @case(1)
-                    <x-badge class="bg-green-600 py-1 text-white px-2">
-                        IMEI Product
-                    </x-badge>
-                @break
-
-                @case(0)
-                    <x-badge class="bg-gray-300 py-1 text-dark px-2">
-                        Non-IMEI Product
-                    </x-badge>
-                @break
-
-                @default
-            @endswitch
-        </td>
         <td class="py-4 whitespace-nowrap px-6 text-center" id="product_stock{{ $product->id }}">
             @php
                 $total_quantity = \App\Models\LocationStock::where('product_id', $product->id)

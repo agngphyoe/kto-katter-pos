@@ -439,6 +439,49 @@ use App\Constants\PrefixCodeID;
 
                             </div>
 
+                            {{-- combined products --}}
+                            {{-- <div class="mb-10 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+                                <div class="flex items-center gap-5">
+                                    <label for="" class="font-jakarta text-paraColor font-semibold ">Combined Products</label>
+
+                                </div>
+
+                                <div class="flex items-center justify-start">
+                                    <div>
+                                        <select name="product_ids[]" class="outline outline-1 font-jakarta text-paraColor  text-[16px] outline-paraColor px-10 py-2 rounded-full product-select select2"
+                                         id="product_select" multiple>
+                                            @forelse ($products as $product)
+                                                <option value="{{ $product->id }}">
+                                                    {{ $product->name }}
+                                                </option>
+                                            @empty
+                                            <option value="" disabled>No Product Found</option>
+                                            @endforelse
+                                        </select>
+                                    </div>
+                                </div>
+
+                            </div> --}}
+                            <div class="mb-10 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+                                <label for="" class="font-jakarta text-paraColor font-semibold ">Combined Product <span class="text-red-600">*</span></label>
+                                <div class="mr-[50px]">
+                                    <div>
+                                        <select name="product_ids[]" class="outline outline-1 font-jakarta text-paraColor  text-[16px] outline-paraColor px-10 py-2 rounded-full product-select select2"
+                                         id="product_select" multiple>
+                                            @forelse ($products as $product)
+                                                <option value="{{ $product->id }}">
+                                                    {{ $product->name }}
+                                                </option>
+                                            @empty
+                                            <option value="" disabled>No Product Found</option>
+                                            @endforelse
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
                             {{-- minimum quantity --}}
                             <div class="mb-10 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
                                 <label for="" class="font-jakarta text-paraColor font-semibold ">Minimum
@@ -480,7 +523,7 @@ use App\Constants\PrefixCodeID;
                             <a href="{{ route('product-list') }}">
                                 <button type="button" class="outline outline-1 text-noti font-semibold font-jakarta text-sm outline-noti  w-32 py-2 rounded-2xl">Cancel</button>
                             </a>
-                            <button type="submit" class="text-sm bg-primary  font-semibold font-jakarta text-white  w-32  py-2 rounded-2xl" id="done">Done</button>
+                            <button type="submit" class="text-sm bg-primary  font-semibold font-jakarta text-white  w-32  py-2 rounded-2xl" id="done">Build</button>
                         </div>
                     </form>
                 </div>

@@ -119,6 +119,18 @@ class PermissionSeeder extends Seeder
             //     ]
             // ],
             [
+                'name' => 'Category',
+                'permissions' => [
+                    'category-list',
+                    'category-create',
+                    'category-edit',
+                    'category-delete',
+                    'category-detail',
+                    'category-export',
+                    'category-print'
+                ]
+            ],
+            [
                 'name' => 'Brand',
                 'permissions' => [
                     'brand-list',
@@ -140,18 +152,6 @@ class PermissionSeeder extends Seeder
                     'model-detail',
                     'model-export',
                     'model-print'
-                ]
-            ],
-            [
-                'name' => 'Category',
-                'permissions' => [
-                    'category-list',
-                    'category-create',
-                    'category-edit',
-                    'category-delete',
-                    'category-detail',
-                    'category-export',
-                    'category-print'
                 ]
             ],
             [
@@ -455,20 +455,6 @@ class PermissionSeeder extends Seeder
                     'change-status'
                 ]
             ],
-
-            [
-                'name' => 'Payment Type',
-                'permissions' => [
-                    'payment-type-list',
-                    'payment-type-create',
-                    'payment-type-edit',
-                    'payment-type-delete',
-                    'payment-type-detail',
-                    'payment-type-export',
-                    'payment-type-print',
-                ]
-            ],
-
             [
                 'name' => 'Reports',
                 'permissions' => [

@@ -221,6 +221,8 @@ class ProductController extends Controller
             $request['code'] = $prefix_code;
             $request['image'] = $image;
             $request['created_by'] = auth()->user()->id;
+            $request['isOwnProduct'] = false;
+            $request['is_imei'] = false;
             $brand_name = Brand::where('id', $request['brand_id'])->value('name');
             if($brand_name == 'FOC'){
                 $request['is_foc'] = 1;
@@ -639,4 +641,16 @@ class ProductController extends Controller
     //     return response()->download($filePath);
     // }
 
+    public function buildNewProduct()
+    {
+        $brands = Brand::orderByDesc('id')->get();
+        $product_models = ProductModel::all();
+        $categories = Category::all();
+        $types = Type::all();
+        $designs = Design::all();
+        $products = Product::all();
+
+        return view('product.build', compact('categories', 'brands', 'product_models', 'brands',
+                                            'types', 'designs', 'products'));
+    }
 }

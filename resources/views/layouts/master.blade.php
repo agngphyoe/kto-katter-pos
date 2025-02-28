@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>@yield('title', env('APP_NAME'))</title>
-    <link rel="icon" type="image/x-icon" href="{{ asset('images/mobileShop_logo.png') }}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('images/kto_logo.png') }}">
     <!-- SweetAlert 2 CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.min.css">
 
